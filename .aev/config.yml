@@ -5,4 +5,4 @@ end_date: 2026-10-30
 hourly_rate: 100
 stabilization_window_days: 14
 agent_accounts:
-  - placeholder-agent
+  - claude
