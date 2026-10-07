@@ -2,7 +2,7 @@
 
 As of **2026-10-07** for `GunpreetSabharwall/aev-pilot-sandbox`. Calculated with the [AEV method note v0.1](https://github.com/GunpreetSabharwall/agentic-earned-value/blob/main/AEV-method-note-v0.1.md).
 
-**What this means:** No cost has been recorded yet, so cost efficiency cannot be measured; it is ahead of schedule.
+**What this means:** For every $1 spent, the project has earned $1.13 of value; it is under budget and ahead of schedule.
 
 ## Summary
 
@@ -11,10 +11,10 @@ As of **2026-10-07** for `GunpreetSabharwall/aev-pilot-sandbox`. Calculated with
 | Budget at Completion (BAC) | $1,600 | Total planned budget |
 | Planned Value (PV) | $128 | Value planned to be done by now |
 | Earned Value (EV) | $1,100 | Value of accepted work that stuck |
-| Actual Cost (AC) | $0 | People + review + agent spend so far |
-| CPI = EV / AC | n/a | Below 1.00 = over budget |
+| Actual Cost (AC) | $977 | People + review + agent spend so far |
+| CPI = EV / AC | 1.13 | Below 1.00 = over budget |
 | SPI = EV / PV | 8.59 | Below 1.00 = behind schedule |
-| EAC = AC + (BAC − EV) / CPI | n/a | Forecast total cost |
+| EAC = AC + (BAC − EV) / CPI | $1,421 | Forecast total cost |
 
 ## Classic EVM vs. AEV
 
@@ -23,18 +23,18 @@ Classic EVM counts only build labor and never takes value back. AEV adds review 
 | Indicator | Classic EVM (labor only, no clawback) | AEV |
 |---|---:|---:|
 | EV | $1,100 | $1,100 |
-| AC | $0 | $0 |
-| CPI | n/a | n/a |
+| AC | $775 | $977 |
+| CPI | 1.42 | 1.13 |
 | SPI | 8.59 | 8.59 |
-| EAC | n/a | n/a |
+| EAC | $1,127 | $1,421 |
 
 ## New AEV indicators
 
 | Indicator | Formula | Value | What it tells you |
 |---|---|---:|---|
 | Rework Rate | Clawback / Gross EV | 0.0% | Share of "done" work that did not stick |
-| Agent Cost Share | AC_agent / AC | n/a | How much of spend goes to agents |
-| Review Load Ratio | AC_review / AC_agent | n/a | Human oversight per $1 of agent spend |
+| Agent Cost Share | AC_agent / AC | 2.7% | How much of spend goes to agents |
+| Review Load Ratio | AC_review / AC_agent | 6.53 | $6.53 of human review per $1 of agent spend |
 
 ## By authorship class
 
@@ -42,11 +42,11 @@ A = all merged PRs by agent accounts, H = none, M = mixed. Unassigned = costs wi
 
 | Class | Items earning value | EV | AC | CPI |
 |---|---:|---:|---:|---:|
-| Agent-authored (A) | 2 | $500 | $0 | n/a |
-| Human-authored (H) | 3 | $600 | $0 | n/a |
+| Agent-authored (A) | 2 | $500 | $157 | 3.19 |
+| Human-authored (H) | 3 | $600 | $550 | 1.09 |
 | Mixed (M) | 0 | $0 | $0 | n/a |
-| Unassigned | 0 | $0 | $0 | n/a |
-| **Total** | **5** | **$1,100** | **$0** | **n/a** |
+| Unassigned | 0 | $0 | $270 | 0.00 |
+| **Total** | **5** | **$1,100** | **$977** | **1.13** |
 
 ## Where the numbers come from
 
@@ -55,9 +55,12 @@ A = all merged PRs by agent accounts, H = none, M = mixed. Unassigned = costs wi
 | Gross EV (all accepted items) | $1,100 |
 | Clawback (reverted or reopened within 14 days) | $0 |
 | EV = Gross EV − Clawback | $1,100 |
-| AC_build (0 h × $100) | $0 |
-| AC_review (0 h × $100) | $0 |
-| AC_agent | $0 |
+| AC_build (7.8 h × $100) | $775 |
+| AC_review (1.8 h × $100) | $175 |
+| AC_agent | $27 |
+| &nbsp;&nbsp;agent: ci | $0 |
+| &nbsp;&nbsp;agent: model | $6 |
+| &nbsp;&nbsp;agent: tools | $20 |
 | Budgeted value of all `aev-points` issues | $1,600 |
 
 ## Clawed-back items
