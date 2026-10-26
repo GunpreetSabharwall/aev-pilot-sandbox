@@ -1,6 +1,6 @@
 # Agentic Earned Value (AEV) report
 
-As of **2026-10-19** for `GunpreetSabharwall/aev-pilot-sandbox`. Calculated with the [AEV method note v0.1](https://github.com/GunpreetSabharwall/agentic-earned-value/blob/main/AEV-method-note-v0.1.md).
+As of **2026-10-26** for `GunpreetSabharwall/aev-pilot-sandbox`. Calculated with the [AEV method note v0.1](https://github.com/GunpreetSabharwall/agentic-earned-value/blob/main/AEV-method-note-v0.1.md).
 
 **What this means:** For every $1 spent, the project has earned $1.64 of value; it is under budget and ahead of schedule.
 
@@ -9,11 +9,11 @@ As of **2026-10-19** for `GunpreetSabharwall/aev-pilot-sandbox`. Calculated with
 | Indicator | Value | Meaning |
 |---|---:|---|
 | Budget at Completion (BAC) | $1,600 | Total planned budget |
-| Planned Value (PV) | $896 | Value planned to be done by now |
+| Planned Value (PV) | $1,344 | Value planned to be done by now |
 | Earned Value (EV) | $1,600 | Value of accepted work that stuck |
 | Actual Cost (AC) | $977 | People + review + agent spend so far |
 | CPI = EV / AC | 1.64 | Below 1.00 = over budget |
-| SPI = EV / PV | 1.79 | Below 1.00 = behind schedule |
+| SPI = EV / PV | 1.19 | Below 1.00 = behind schedule |
 | EAC = AC + (BAC − EV) / CPI | $977 | Forecast total cost |
 
 ## Classic EVM vs. AEV
@@ -25,7 +25,7 @@ Classic EVM counts only build labor and never takes value back. AEV adds review 
 | EV | $1,600 | $1,600 |
 | AC | $775 | $977 |
 | CPI | 2.06 | 1.64 |
-| SPI | 1.79 | 1.79 |
+| SPI | 1.19 | 1.19 |
 | EAC | $775 | $977 |
 
 ## New AEV indicators
