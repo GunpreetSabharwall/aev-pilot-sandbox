@@ -1,6 +1,6 @@
 # Agentic Earned Value (AEV) report
 
-As of **2026-11-02** for `GunpreetSabharwall/aev-pilot-sandbox`. Calculated with the [AEV method note v0.1](https://github.com/GunpreetSabharwall/agentic-earned-value/blob/main/AEV-method-note-v0.1.md).
+As of **2026-11-09** for `GunpreetSabharwall/aev-pilot-sandbox`. Calculated with the [AEV method note v0.1](https://github.com/GunpreetSabharwall/agentic-earned-value/blob/main/AEV-method-note-v0.1.md).
 
 **What this means:** For every $1 spent, the project has earned $1.64 of value; it is under budget and on schedule.
 
